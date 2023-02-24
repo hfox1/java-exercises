@@ -19,7 +19,10 @@ public class WordGame {
         return toGuess.toString();
     }
 
-    public static void main(String[] args) {
+    public Integer getRemainingAttempts() {
+        return 3;
+    }
 
+    public static void main(String[] args) {
     }
 }
