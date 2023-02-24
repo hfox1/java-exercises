@@ -10,9 +10,16 @@ import static org.junit.Assert.*;
 
 public class ToDoTest {
     @Test public void testInitializesEmpty() {
-        ToDo todo = new ToDo();
-        assertEquals("app should have a greeting", new ArrayList<String>(), todo.getTasks());
+        ToDo toDo = new ToDo();
+        assertEquals("initiliazes empty", new ArrayList<String>(), toDo.getTasks());
     }
 
+    @Test public void testAddTasks() {
+        ToDo toDo1 = new ToDo();
+        toDo1.addTask("feed dog");
+        ArrayList<String> result = new ArrayList<>();
+        result.add("feed dog");
+        assertEquals("arrayL should now include feed dog", result, toDo1.getTasks());
+    }
 
 }

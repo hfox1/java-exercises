@@ -5,10 +5,13 @@ package todo;
 import java.util.*;
 
 public class ToDo {
-public ArrayList<String> tasks;
+public ArrayList<String> tasks = new ArrayList<String>();
 
-    public String getTasks() {
-        return "Hello World!";
+    public ArrayList<String> getTasks() {
+        return tasks;
+    }
+    public ArrayList<String> addTask(String task) {
+        return tasks;
     }
 
     public static void main(String[] args) {
