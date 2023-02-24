@@ -3,12 +3,12 @@
  */
 package wordgame;
 
-public class App {
-    public String getGreeting() {
+public class WordGame {
+    public String getWordToGuess() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
     }
 }
