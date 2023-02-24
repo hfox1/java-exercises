@@ -12,10 +12,18 @@ import org.mockito.Mockito.*;
 public class ToDoTest {
     @Test public void testInitializesEmpty() {
         ToDo toDo = new ToDo();
-        assertEquals("initiliazes empty", new ArrayList<String>(), toDo.getTasks());
+        assertEquals("initiliazes empty", new ArrayList<String>(), toDo.tasks);
     }
 
     @Test public void testAddsTask() {
+        ToDo toDo1 = new ToDo();
+        toDo1.addTask("feed dog");
+        ArrayList<String> result = new ArrayList<>();
+        result.add("feed dog");
+        assertEquals("arrayL should now include feed dog", result, toDo1.getTasks());
+    }
+
+     @Test public void testAddsTask() {
         ToDo toDo1 = new ToDo();
         toDo1.addTask("feed dog");
         ArrayList<String> result = new ArrayList<>();
