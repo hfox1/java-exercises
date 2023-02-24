@@ -20,7 +20,7 @@ public class ToDoTest {
         toDo1.addTask("feed dog");
         ArrayList<String> result = new ArrayList<>();
         result.add("feed dog");
-        assertEquals("arrayL should now include feed dog", result, toDo1.getTasks());
+        assertEquals("arrayL should now include feed dog", result, toDo1.tasks);
     }
 
      @Test public void testAddsTask() {
