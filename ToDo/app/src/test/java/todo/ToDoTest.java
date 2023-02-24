@@ -7,6 +7,7 @@ import java.util.*;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.mockito.Mockito.*;
 
 public class ToDoTest {
     @Test public void testInitializesEmpty() {
@@ -14,7 +15,7 @@ public class ToDoTest {
         assertEquals("initiliazes empty", new ArrayList<String>(), toDo.getTasks());
     }
 
-    @Test public void testAddTasks() {
+    @Test public void testAddsTask() {
         ToDo toDo1 = new ToDo();
         toDo1.addTask("feed dog");
         ArrayList<String> result = new ArrayList<>();
