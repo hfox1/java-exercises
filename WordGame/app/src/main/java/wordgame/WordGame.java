@@ -5,6 +5,7 @@ package wordgame;
 
 public class WordGame {
     public String gameWord;
+    public Integer remaining = 10;
 
     public WordGame (String wordToGuess) {
     gameWord = wordToGuess;

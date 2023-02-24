@@ -12,6 +12,12 @@ public class WordGameTest {
         assertEquals(game.gameWord, "MAKERS");
     }
 
+    @Test public void initializesWith10Attempts() {
+        WordGame game = new WordGame("MAKERS");
+        Integer answer = 10;
+        assertEquals(game.remaining, answer);
+    }
+
     @Test public void getsWordtoGuess() {
         WordGame game = new WordGame("MAKERS");
         assertEquals(game.getWordToGuess(), "M_____");
