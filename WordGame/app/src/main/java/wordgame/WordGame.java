@@ -20,7 +20,7 @@ public class WordGame {
     }
 
     public Integer getRemainingAttempts() {
-        return 3;
+        return this.remaining;
     }
 
     public static void main(String[] args) {
