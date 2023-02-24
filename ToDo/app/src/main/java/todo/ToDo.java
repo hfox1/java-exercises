@@ -8,8 +8,10 @@ public class ToDo {
 public ArrayList<String> tasks = new ArrayList<String>();
 
     public ArrayList<String> getTasks() {
-        return tasks;
+ ArrayList<String> chair = new ArrayList<String>();
+ return chair;
     }
+    
     public void addTask(String task) {
       tasks.add(task);
     }

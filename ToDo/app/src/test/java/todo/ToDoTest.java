@@ -23,12 +23,14 @@ public class ToDoTest {
         assertEquals("arrayL should now include feed dog", result, toDo1.tasks);
     }
 
-     @Test public void testAddsTask() {
-        ToDo toDo1 = new ToDo();
-        toDo1.addTask("feed dog");
+     @Test public void testGetTasks() {
+        ToDo toDo2 = new ToDo();
+        toDo2.addTask("feed dog");
+        toDo2.addTask("chase cat");
         ArrayList<String> result = new ArrayList<>();
         result.add("feed dog");
-        assertEquals("arrayL should now include feed dog", result, toDo1.getTasks());
+        result.add("chase cat");
+        assertEquals("arrayL should now include feed dog", result, toDo2.getTasks());
     }
 
 }
