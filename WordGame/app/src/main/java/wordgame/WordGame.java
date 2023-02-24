@@ -5,7 +5,7 @@ package wordgame;
 
 public class WordGame {
     public String getWordToGuess() {
-        return "Hello World!";
+        return "B_____";
     }
 
     public static void main(String[] args) {
