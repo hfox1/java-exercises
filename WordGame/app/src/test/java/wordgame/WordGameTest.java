@@ -7,8 +7,13 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class WordGameTest {
+    @Test public void initializesWithGameWord() {
+        WordGame game = new WordGame("MAKERS");
+        assertEquals(game.gameWord, "MAKERS");
+    }
+
     @Test public void getsWordtoGuess() {
-        WordGame game = new WordGame();
-        assertEquals(game.getWordToGuess(), "B_____");
+        WordGame game = new WordGame("MAKERS");
+        assertEquals(game.getWordToGuess(), "M_____");
     }
 }

@@ -4,6 +4,12 @@
 package wordgame;
 
 public class WordGame {
+    public String gameWord;
+
+    public WordGame (String wordToGuess) {
+    gameWord = wordToGuess;
+}
+
     public String getWordToGuess() {
         return "B_____";
     }
