@@ -11,7 +11,11 @@ public class WordGame {
 }
 
     public String getWordToGuess() {
-        return "B_____";
+        StringBuilder toGuess = new StringBuilder(gameWord);
+        for (int i = 1; i < gameWord.length(); i++) {
+            toGuess.setCharAt(i, '_');
+        }
+        return toGuess.toString();
     }
 
     public static void main(String[] args) {
